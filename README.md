@@ -8,7 +8,7 @@
   </a>
 </p>
 
-# KHOJNIN [Visit Website](https://khojnin.com)
+# [KHOJNIN.COM](https://khojnin.com)
 ## Popular Listing App in Bangladesh
 - Hotels
 - Restaurants
