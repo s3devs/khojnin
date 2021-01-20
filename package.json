@@ -1,0 +1,30 @@
+{
+  "name": "khojnin",
+  "version": "1.0.0",
+  "description": "Fast Growing & Popular Listing Site of Bangladesh (Hotel, Restaurant, Car, Shop, Hospital, Services)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3devs/khojnin.git"
+  },
+  "keywords": [
+    "listing",
+    "hotel",
+    "car",
+    "shop",
+    "hospital",
+    "restaurant",
+    "bangladesh",
+    "search",
+    "service"
+  ],
+  "author": "S3Devs Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s3devs/khojnin/issues"
+  },
+  "homepage": "https://github.com/s3devs/khojnin#readme"
+}
