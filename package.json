@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/s3devs/khojnin/issues"
   },
-  "homepage": "https://github.com/s3devs/khojnin#readme"
+  "homepage": "https://github.com/s3devs/khojnin#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
