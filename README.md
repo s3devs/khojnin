@@ -7,9 +7,8 @@
     />
   </a>
 </p>
-
-#KHOJNIN.COM
-##Popular Listing App in Bangladesh
+# KHOJNIN.COM
+## Popular Listing App in Bangladesh
 - Hotels
 - Restaurants
 - Car, Bus & Air
