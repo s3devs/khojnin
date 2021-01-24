@@ -37,10 +37,48 @@ exports.createCustomer = (req, res, next) => {
     });
   })
 }
+
 // Login
 exports.loginCustomer = (req, res, next) => {
+  let fetchCustomer;
 
+  Customer.findOne({ mobile: req.body.mobile})
+  .then(user => {
+    if(!user){
+      return res.status(201).json({
+        error: true,
+        msg: "User not found"
+      })
+    }
+    fetchCustomer = user
+    return bcrypt.compare(req.body.password, user.password)
+  })
+  .then(result => {
+    if(!result){
+      return res.status(201).json({
+        error: true,
+        msg: "Wrong Password"
+      })
+    }
+
+    const token = jwt.sign({_id:fetchCustomer._id}, process.env.SECRET, {expiresIn: "8h"})
+
+    return res.status(201).json({
+      data: fetchCustomer,
+      token: token,
+      msg: "Login Successfull",
+      error: false
+    })
+  })
+  .catch(err => {
+    return res.status(200).json({
+      error: true,
+      msg: "Login Failed!!",
+      errMsg: err
+    })
+  })
 }
+
 // Info Update
 exports.updateCustomer = (req, res, next) => {
 
